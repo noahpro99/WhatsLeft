@@ -83,13 +83,15 @@ export default function settings() {
           </View>
         </View>
       </View>
-      <View className="items-center py-5">
-        <Pressable
-          onPress={() => {
-            signOut();
-          }}>
-          <Text className="text-white">Sign Out</Text>
-        </Pressable>
+      <View className="px-5 py-3">
+        <View className="bg-zinc-800 rounded-lg p-2.5">
+          <Pressable
+            onPress={() => {
+              signOut();
+            }}>
+            <Text className="text-red-600 font-bold text-center text-base">Sign Out</Text>
+          </Pressable>
+        </View>
       </View>
     </SafeAreaView>
   );
